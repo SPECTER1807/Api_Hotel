@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,24 +28,39 @@
      })(window,document,'script','dataLayer','GTM-NSMS76N');</script>
      <!-- End Google Tag Manager -->
                      
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
- 
-     <!-- Main CSS -->
-     <link rel="stylesheet" href="./assets/css/style.css">
- 
-     <!-- Favicon -->
-     <link rel="shortcut icon" href="./assets/media/favicon.png" type="image/x-icon">
- 
-     <!-- Favicon -->
-     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
- 
-     <!-- Semantic UI CDN -->
-     <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
- 
-     <!-- Jquery -->
-     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-     <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
+
+    <!-- Semantic UI CDN -->
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSMS76N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <!-- <div class="loader-div" id="loader-div">
+        <div class="spinner">
+        </div>
+    </div> -->
+
+    <!-- End Loader -->
  </head>
  <body>
      <!-- Google Tag Manager (noscript) -->
@@ -67,7 +83,7 @@
     <header class="header">
         <div class="header-left">
             <a href="./index.html">
-                <img class="logo" src="./assets/media/logo.png" alt="grh-logo">
+                <img class="logo" src="{% static 'media/logo.png'%}" alt="grh-logo">
             </a>
         </div>
 
@@ -129,7 +145,7 @@
         <div class="row" id="room-row">
             
             <div class="col-12 col-lg-6" id="left-room-col">
-                <img src="./assets/media/Rooms/COTTAGE/IMG_1714.jpg" class="room-page-imgs" alt="cottage-featured-img">
+                <img src="{% static 'Rooms/COTTAGE/IMG_1714.jpg'%}" class="room-page-imgs" alt="cottage-featured-img">
             </div>
             <div class="col-12 col-lg-6" id="right-room-col">
                     <h2 class="header-h2 header-text">Cottage <span class="price">(₦75,000 / night)</span></h2>
@@ -139,37 +155,37 @@
                     <div class="left">
                         <div class="facilities">
                             
-                            <img src="./assets/icons/family.svg" width="27px" alt="family">
+                            <img src="{% static 'icons/family.svg'%}" width="27px" alt="family">
                             <p>Family Size</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/bed.svg" width="27px" alt="Bedroom">
+                            <img src="{% static 'icons/bed.svg'%}" width="27px" alt="Bedroom">
                             <p>2 Bedrooms</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tissue.svg" width="27px" alt="Bathroom">
+                            <img src="{% static 'icons/tissue.svg'%}" width="27px" alt="Bathroom">
                             <p>2 Bathrooms</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/chair.svg" width="27px" alt="living-room">
+                            <img src="{% static 'icons/chair.svg'%}" width="27px" alt="living-room">
                             <p>Living Room</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/dining.svg" width="27px" alt="dining">
+                            <img src="{% static 'icons/dining.svg'%}" width="27px" alt="dining">
                             <p>Dining Area</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/fridge.svg" width="27px" alt="fridge">
+                            <img src="{% static 'icons/fridge.svg'%}" width="27px" alt="fridge">
                             <p>Mini Fridge</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/parking.svg" width="27px" alt="parking">
+                            <img src="{% static '/icons/parking.svg'%}" width="27px" alt="parking">
                             <p>Parking</p> 
                         </div>
                         
@@ -178,32 +194,32 @@
                     <div class="right">
 
                         <div class="facilities">
-                            <img src="./assets/icons/cocktail.svg" width="27px" alt="cocktail">
+                            <img src="{% static 'icons/cocktail.svg'%}" width="27px" alt="cocktail">
                             <p>Mini Bar</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/ac.svg" width="27px" alt="AC">
+                            <img src="{% static 'icons/ac.svg'%}" width="27px" alt="AC">
                             <p>Air Conditioning</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/room-service.svg" width="27px" alt="room-service">
+                            <img src="{% static 'icons/room-service.svg'%}" width="27px" alt="room-service">
                             <p>Room Service</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/coffee.svg" width="27px" alt="coffee">
+                            <img src="{% static 'icons/coffee.svg'%}" width="27px" alt="coffee">
                             <p>Tea / Coffee</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tv.svg" width="27px" alt="television">
+                            <img src="{% static 'icons/tv.svg'%}" width="27px" alt="television">
                             <p>TV</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/beach.svg" width="27px" alt="beach">
+                            <img src="{% static 'icons/beach.svg'%}" width="27px" alt="beach">
                             <p>Beach Access (2 Per Room)</p> 
                         </div>
                         
@@ -227,7 +243,7 @@
         <!-- Round House -->
         <div class="row" id="room-row">
             <div class="col-12 col-lg-6" id="left-room-col">
-                <img src="./assets/media/Rooms/ROUND HOUSE COTTAGE/IMG_0262-1.jpg" class="room-page-imgs" alt="round-house-featured-img">
+                <img src="{% static 'media/Rooms/ROUND HOUSE COTTAGE/IMG_0262-1.jpg'%}" class="room-page-imgs" alt="round-house-featured-img">
             </div>
             <div class="col-12 col-lg-6" id="right-room-col">
                 <h2 class="header-h2 header-text">Round House 1 <span class="price">(₦55,000 / night)</span></h2>
@@ -235,37 +251,37 @@
                 <div class="facilities-main">
                     <div class="left">
                         <div class="facilities">
-                            <img src="./assets/icons/family.svg" width="27px" alt="family">
+                            <img src="{% static 'icons/family.svg'%}" width="27px" alt="family">
                             <p>Family Size</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/bed.svg" width="27px" alt="Bedroom">
+                            <img src="{% static '/icons/bed.svg'%}" width="27px" alt="Bedroom">
                             <p>1 Bedroom</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tissue.svg" width="27px" alt="Bathroom">
+                            <img src="{% static '/icons/tissue.svg'%}" width="27px" alt="Bathroom">
                             <p>2 Bathrooms</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/chair.svg" width="27px" alt="living-room">
+                            <img src="{% static 'icons/chair.svg'%}" width="27px" alt="living-room">
                             <p>Living Room</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/view.svg" width="27px" alt="view">
+                            <img src="{% static 'icons/view.svg'%}" width="27px" alt="view">
                             <p>Hill View</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/fridge.svg" width="27px" alt="fridge">
+                            <img src="{% static 'icons/fridge.svg'%}" width="27px" alt="fridge">
                             <p>Mini Fridge</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/parking.svg" width="27px" alt="parking">
+                            <img src="{% static 'icons/parking.svg'%}" width="27px" alt="parking">
                             <p>Parking</p> 
                         </div>
                         
@@ -274,38 +290,38 @@
                     <div class="right">
 
                         <div class="facilities">
-                            <img src="./assets/icons/cocktail.svg" width="27px" alt="cocktail">
+                            <img src="{% static 'icons/cocktail.svg'%}" width="27px" alt="cocktail">
                             <p>Mini Bar</p> 
                         </div>
                         
                         <div class="facilities">
-                            <img src="./assets/icons/dining.svg" width="27px" alt="dining">
+                            <img src="{% static 'icons/dining.svg'%}" width="27px" alt="dining">
                             <p>Dining Area</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/ac.svg" width="27px" alt="AC">
+                            <img src="{% static '/icons/ac.svg'%}" width="27px" alt="AC">
                             <p>Air Conditioning</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/room-service.svg" width="27px" alt="room-service">
+                            <img src="{% static 'icons/room-service.svg'%}" width="27px" alt="room-service">
                             <p>Room Service</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/coffee.svg" width="27px" alt="coffee">
+                            <img src="{% static 'icons/coffee.svg'%}" width="27px" alt="coffee">
                             <p>Tea / Coffee</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tv.svg" width="27px" alt="television">
+                            <img src="{% static 'icons/tv.svg'%}" width="27px" alt="television">
                             <p>TV</p> 
                         </div>
 
 
                         <div class="facilities">
-                            <img src="./assets/icons/beach.svg" width="27px" alt="beach">
+                            <img src="{% static 'icons/beach.svg'%}" width="27px" alt="beach">
                             <p>Beach Access (2 Per Room)</p> 
                         </div>
                        
@@ -327,7 +343,7 @@
         <!-- VVIP -->
         <div class="row" id="room-row">
             <div class="col-12 col-lg-6" id="left-room-col">
-                <img src="./assets/media/Rooms/VVIP SUITE/IMG_1620.jpg" class="room-page-imgs" alt="vvip-featured-img">
+                <img src="{% static 'media/Rooms/VVIP SUITE/IMG_1620.jpg'%}" class="room-page-imgs" alt="vvip-featured-img">
             </div>
             <div class="col-12 col-lg-6" id="right-room-col">
                 <h2 class="header-h2 header-text">V-VIP Suite <span class="price">(₦40,000 / night)</span></h2>
@@ -335,37 +351,37 @@
                 <div class="facilities-main">
                     <div class="left">
                         <div class="facilities">
-                            <img src="./assets/icons/couple.svg" width="27px" alt="people">
+                            <img src="{% static 'icons/couple.svg'%}" width="27px" alt="people">
                             <p>2 Persons</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/bed.svg" width="27px" alt="Bedroom">
+                            <img src="{% static 'icons/bed.svg'%}" width="27px" alt="Bedroom">
                             <p>1 Bedroom</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tissue.svg" width="27px" alt="Bathroom">
+                            <img src="{% static 'icons/tissue.svg'%}" width="27px" alt="Bathroom">
                             <p>2 Bathrooms</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/chair.svg" width="27px" alt="living-room">
+                            <img src="{% static 'icons/chair.svg'%}" width="27px" alt="living-room">
                             <p>Living Room</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/dining.svg" width="27px" alt="dining">
+                            <img src="{% static 'icons/dining.svg'%}" width="27px" alt="dining">
                             <p>Dining Area</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/fridge.svg" width="27px" alt="fridge">
+                            <img src="{% static '/icons/fridge.svg'%}" width="27px" alt="fridge">
                             <p>Mini Fridge</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/parking.svg" width="27px" alt="parking">
+                            <img src="{% static 'icons/parking.svg'%}" width="27px" alt="parking">
                             <p>Parking</p> 
                         </div>
 
@@ -373,32 +389,32 @@
 
                     <div class="right">
                         <div class="facilities">
-                            <img src="./assets/icons/cocktail.svg" width="27px" alt="cocktail">
+                            <img src="{% static 'icons/cocktail.svg'%}" width="27px" alt="cocktail">
                             <p>Mini Bar</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/ac.svg" width="27px" alt="AC">
+                            <img src="{% static 'icons/ac.svg'%}" width="27px" alt="AC">
                             <p>Air Conditioning</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/room-service.svg" width="27px" alt="room-service">
+                            <img src="{% static 'icons/room-service.svg'%}" width="27px" alt="room-service">
                             <p>Room Service</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/coffee.svg" width="27px" alt="coffee">
+                            <img src="{% static 'icons/coffee.svg'%}" width="27px" alt="coffee">
                             <p>Tea / Coffee</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tv.svg" width="27px" alt="television">
+                            <img src="{% static 'icons/tv.svg'%}" width="27px" alt="television">
                             <p>TV</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/beach.svg" width="27px" alt="beach">
+                            <img src="{% static 'icons/beach.svg'%}" width="27px" alt="beach">
                             <p>Beach Access (2 Per Room)</p> 
                         </div>
                         
@@ -419,7 +435,7 @@
         <!-- Vip -->
         <div class="row" id="room-row">
             <div class="col-12 col-lg-6" id="left-room-col">
-                <img src="./assets/media/Rooms/VIP SUITE/IMG_0302.jpg" class="room-page-imgs" alt="vip-featured-img">
+                <img src="{% static 'media/Rooms/VIP SUITE/IMG_0302.jpg'%}" class="room-page-imgs" alt="vip-featured-img">
 
             </div>
             <div class="col-12 col-lg-6" id="right-room-col">
@@ -428,41 +444,41 @@
                 <div class="facilities-main">
                     <div class="left">
                         <div class="facilities">
-                            <img src="./assets/icons/couple.svg" width="27px" alt="people">
+                            <img src="{% static 'icons/couple.svg'%}" width="27px" alt="people">
                             <p>2 Persons</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/bed.svg" width="27px" alt="Bedroom">
+                            <img src="{% static 'icons/bed.svg'%}" width="27px" alt="Bedroom">
                             <p>1 Bedroom</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/tissue.svg" width="27px" alt="Bathroom">
+                            <img src="{% static 'icons/tissue.svg'%}" width="27px" alt="Bathroom">
                             <p>1 Bathroom</p> 
                         </div>
         
                         <div class="facilities">
-                            <img src="./assets/icons/chair.svg" width="27px" alt="living-room">
+                            <img src="{% static 'icons/chair.svg'%}" width="27px" alt="living-room">
                             <p>Living Room</p> 
                         </div>
                         <div class="facilities">
-                            <img src="./assets/icons/ac.svg" width="27px" alt="AC">
+                            <img src="{% static 'icons/ac.svg'%}" width="27px" alt="AC">
                             <p>Air Conditioning</p> 
                         </div>
                        
                         <div class="facilities">
-                            <img src="./assets/icons/fridge.svg" width="27px" alt="fridge">
+                            <img src="{% static 'icons/fridge.svg'%}" width="27px" alt="fridge">
                             <p>Mini Fridge</p> 
                         </div>
 
                         <div class="facilities">
-                            <img src="./assets/icons/parking.svg" width="27px" alt="parking">
+                            <img src="{% static 'icons/parking.svg'%}" width="27px" alt="parking">
                             <p>Parking</p> 
                         </div>
 
                     </div>
-
+{% comment %} ######################################################################################## {% endcomment %}
                     <div class="right">
                         <div class="facilities">
                             <img src="./assets/icons/dining.svg" width="27px" alt="dining">

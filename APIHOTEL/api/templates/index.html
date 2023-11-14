@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gordon Resort Hotel - McCarthy Beach</title>
-    <meta name = "keywords" content = "Gordon Resort Hotel Abraka, Gordon Resort Hotel, McCarthy Beach, Beaches in Delta state, Beaches in Nigeria, beaches in Africa, beaches near me" />
-    <meta name = "description" content = " Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State. It is famous for its Natural white sandy Beach and serene environment." />
+    <meta name="keywords" content="Gordon Resort Hotel Abraka, Gordon Resort Hotel, McCarthy Beach, Beaches in Delta state, Beaches in Nigeria, beaches in Africa, beaches near me" />
+    <meta name="description" content="Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State. It is famous for its Natural white sandy Beach and serene environment." />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1EVRTK6PD"></script>
@@ -28,13 +28,13 @@
     <!-- End Google Tag Manager -->
                     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{ % static '/bootstrap/css/bootstrap.min.css'}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="{ % static '/css/style.css'">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{ % static '/media/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
 
     <!-- Favicon -->
     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
@@ -52,7 +52,6 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    
     <!-- Loader -->
     <!-- <div class="loader-div" id="loader-div">
         <div class="spinner">
@@ -61,65 +60,58 @@
 
     <!-- End Loader -->
 
-   <!-- Header Navigation -->
-   <nav>
-    <div class="container">
-    <div class="row">
-    <header class="header">
-        <div class="header-left">
-            <a href="./index.html">
-                <img class="logo" src="./assets/media/logo.png" alt="grh-logo">
-            </a>
-        </div>
+    <!-- Header Navigation -->
+    <nav>
+        <div class="container">
+            <div class="row">
+                <header class="header">
+                    <div class="header-left">
+                        <a href="./index.html">
+                            <img class="logo" src="{% static 'media/logo.png' %}" alt="grh-logo">
+                        </a>
+                    </div>
 
-        <div class="header-right">
-            <div class="nav-menu" id="navi-menu">
-            <ul class="nav-items">
-                <li class="list-items" ><a class="header-link" id="active-nav" href="./index.html">Home</a></li>
-                <li class="list-items"><a class="header-link" href="./about.html">About</a></li>
-                <li class="list-items"><a class="header-link" href="./gallery.html">Gallery</a></li>
-                <li class="list-items"><a class="header-link" href="./rooms.html">Rooms</a></li>
-                <li class="list-items"><a class="header-link" href="./amenities.html">Amenities</a></li>
-                <li class="list-items"><a class="header-link" href="./bookings.html">Bookings</a></li>
-                <li class="list-items"><a class="header-link" href="./faqs.html">FAQs</a></li>
-            </ul>
-            <div class = "vertical"></div>
-            <button class="head-btn" onclick="window.location.href = './contact.html'">Contact Us</button> 
+                    <div class="header-right">
+                        <div class="nav-menu" id="navi-menu">
+                            <ul class="nav-items">
+                                <li class="list-items" ><a class="header-link" id="active-nav" href="./index.html">Home</a></li>
+                                <li class="list-items"><a class="header-link" href="./about.html">About</a></li>
+                                <li class="list-items"><a class="header-link" href="./gallery.html">Gallery</a></li>
+                                <li class="list-items"><a class="header-link" href="./rooms.html">Rooms</a></li>
+                                <li class="list-items"><a class="header-link" href="./amenities.html">Amenities</a></li>
+                                <li class="list-items"><a class="header-link" href="./bookings.html">Bookings</a></li>
+                                <li class="list-items"><a class="header-link" href="./faqs.html">FAQs</a></li>
+                            </ul>
+                            <div class="vertical"></div>
+                            <button class="head-btn" onclick="window.location.href = './contact.html'">Contact Us</button> 
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu" id="hamburger">
+                            <i id="openMenu" class="fa-solid fa-bars fa-2xl" style="color: #2c333d;"></i>
+                            <i id="closeMenu" class="hide fa-solid fa-x fa-2xl " style="color: #2c333d;"></i>
+                        </div>
+                    </div>
+                </header>
             </div>
-        
-       
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="hamburger">
-            <i id="openMenu" class="fa-solid fa-bars fa-2xl" style="color: #2c333d;"></i>
-            <i id="closeMenu" class="hide fa-solid fa-x fa-2xl " style="color: #2c333d;"></i>
         </div>
-        </div>
-    </header>
-    </div>
-    </div>
-</nav>
-   <!-- End Header -->
+    </nav>
+    <!-- End Header -->
 
-   <!-- hero section -->
+    <!-- hero section -->
     <section class="hero-section">
-    
         <div class="container" id="hero-cont">
             <div class="row" id="hero-row">
                 <div class="col-12" id="hero-col">
                     <h1 class="hero-h1">Welcome to Gordon Resort Hotel Abraka</h1>
                     <p class="hero-p">Private, fully equipped and natural resort in the Southern Nigerian Region</p>
                     
-                    
                     <form class="home-search" action="./rooms.html">
-                        
                         <div class="ui calendar" id="date-1">
                             <div class="ui input left icon">
-                              <i class="calendar icon"></i>
-                              <input type="text" class="calender-text"  placeholder="Check In" required>
+                                <i class="calendar icon"></i>
+                                <input type="text" class="calender-text" placeholder="Check In" required>
                             </div>
-                          </div>
-
+                        </div>
 
                           
                           <div class="ui calendar" id="date-2">
@@ -167,7 +159,7 @@
         <div class="container" id="about-cont">
             <div class="row" id="home-about-row">
                 <div class="col-12 col-lg-6" id="left-abt-col">
-                    <img class="home-abt-img" src="./assets/media/Outdoors/IMG_1762.jpg" alt="home-abt-img">
+                    <img class="home-abt-img" src="{% static 'media/Outdoors/IMG_1762.jpg '%}" alt="home-abt-img">
                 </div>
                 <div class="col-12 col-lg-6" id="right-abt-col">
                     <h2 class="header-h2">About Gordon Resort</h2>
@@ -196,21 +188,21 @@
                 <!-- Cottage -->
                 <div class="col-12 col-lg-4" id="card-col">
                     <div class="card-img" id="card-img-1">
-                        <div class="card-info" onclick="window.location.href = './accommodations/cottage.html'">
+                        <div class="card-info" onclick="window.location.href = 'accommodations/cottage.html'">
                             <h3>Cottage</h3>
                             <div class="icon-info">
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/family.svg" width="24px" alt="family">
+                                    <img src="{% static '/icons/family.svg' %}" width="24px" alt="family">
                                     <p>Family Size</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/bed.svg" width="24px" alt="Bedroom">
+                                    <img src="{% static '/icons/bed.svg' %}" width="24px" alt="Bedroom">
                                     <p>2 Bedrooms</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/tissue.svg" width="24px" alt="Bathroom">
+                                    <img src="{% static '/icons/tissue.svg' %}"  width="24px" alt="Bathroom">
                                     <p>2 Bathrooms</p> 
                                 </div>
                             </div>
@@ -225,17 +217,17 @@
                             <h3>Round House</h3>
                             <div class="icon-info">
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/family.svg" width="24px" alt="family">
+                                    <img src="{% static '/icons/family.svg' %}" width="24px" alt="family">
                                     <p>Family Size</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/bed.svg" width="24px" alt="Bedroom">
+                                    <img src="{% static '/icons/bed.svg' %}" width="24px" alt="Bedroom">
                                     <p>1 Bedroom</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/tissue.svg" width="24px" alt="Bathroom">
+                                    <img src="{% static '/icons/tissue.svg' %}" width="24px" alt="Bathroom">
                                     <p>2 Bathrooms</p> 
                                 </div>
                             </div>
@@ -250,17 +242,17 @@
                             <h3>VVIP Suite</h3>
                             <div class="icon-info">
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/couple.svg" width="24px" alt="people">
+                                    <img src="{% static '/icons/couple.svg' %}" width="24px" alt="people">
                                     <p>2 Persons</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/bed.svg" width="24px" alt="Bedroom">
+                                    <img src="{% static '/icons/bed.svg' %}" width="24px" alt="Bedroom">
                                     <p>1 Bedroom</p> 
                                 </div>
                 
                                 <div class="icon-facilities">
-                                    <img src="./assets/icons/tissue.svg" width="24px" alt="Bathroom">
+                                    <img src="{% static '/icons/tissue.svg' %}" width="24px" alt="Bathroom">
                                     <p>2 Bathrooms</p> 
                                 </div>
                             </div>
@@ -286,7 +278,7 @@
                 
 
                 <div class="col-12 col-lg-6" id="left-beach-section">
-                    <img class="beach-img" src="./assets/media/Beach/beach.jpg" alt="">
+                    <img class="beach-img" src="{% static '/media/Beach/beach.jpg' %}" alt="">
                 </div>
                 
                 <div class="col-12 col-lg-6" id="right-beach-section">
@@ -377,7 +369,7 @@
         <div class="container">
             <div class="row" id="footer-row">
                 <div class="col-12 col-lg-4">
-                    <img class="footer-logo" src="./assets/media/footer-logo.png" alt="footer-logo">
+                    <img class="footer-logo" src="{% static '/media/footer-logo.png' %}" alt="footer-logo">
                     <p class="footer-text">Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State.
                         Set out in large expanse of land of over 65 hectares the resort boasts of over 90 exquisitely appointed and tastefully furnished Rooms/Suites. 
                     </p>
@@ -425,7 +417,7 @@
   
     
     <!-- JS -->
-   <script src="./assets/js/index.js"></script>
+   <script src="{% static 'js/index.js' %}"></script>
 
   
 </body>

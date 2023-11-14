@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,25 +28,40 @@
      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
      })(window,document,'script','dataLayer','GTM-NSMS76N');</script>
      <!-- End Google Tag Manager -->
-                     
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
- 
-     <!-- Main CSS -->
-     <link rel="stylesheet" href="./assets/css/style.css">
- 
-     <!-- Favicon -->
-     <link rel="shortcut icon" href="./assets/media/favicon.png" type="image/x-icon">
- 
-     <!-- Favicon -->
-     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
- 
-     <!-- Semantic UI CDN -->
-     <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
- 
-     <!-- Jquery -->
-     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-     <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+                    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
+
+    <!-- Semantic UI CDN -->
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSMS76N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <!-- <div class="loader-div" id="loader-div">
+        <div class="spinner">
+        </div>
+    </div> -->
+
+    <!-- End Loader -->
  </head>
  <body>
      <!-- Google Tag Manager (noscript) -->
@@ -68,7 +84,7 @@
     <header class="header">
         <div class="header-left">
             <a href="./index.html">
-                <img class="logo" src="./assets/media/logo.png" alt="grh-logo">
+                <img class="logo" src="{% static 'media/logo.png'%}" alt="grh-logo">
             </a>
         </div>
 
@@ -176,7 +192,7 @@
         <div class="container">
             <div class="row" id="footer-row">
                 <div class="col-12 col-lg-4">
-                    <img class="footer-logo" src="./assets/media/footer-logo.png" alt="footer-logo">
+                    <img class="footer-logo" src="{% static 'media/footer-logo.png'%}" alt="footer-logo">
                     <p class="footer-text">Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State.
                         Set out in large expanse of land of over 65 hectares the resort boasts of over 90 exquisitely appointed and tastefully furnished Rooms/Suites. 
                     </p>
@@ -224,8 +240,8 @@
   </button>
     
     <!-- JS -->
-   <script src="./assets/js/index.js"></script>
+   <script src="{% static 'js/index.js'%}"></script>
 
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%}" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

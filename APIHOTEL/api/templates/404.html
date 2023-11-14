@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,15 @@
 
     <!-- Do Not Crawl -->
     <meta name = "robots" CONTENT="noindex, nofollow">
-
+                
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://gordonresorthotel.com/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="https://gordonresorthotel.com/assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="https://gordonresorthotel.com/assets/media/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
 
     <!-- Favicon -->
     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
@@ -27,6 +28,21 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSMS76N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Loader -->
+    <!-- <div class="loader-div" id="loader-div">
+        <div class="spinner">
+        </div>
+    </div> -->
+
+    <!-- End Loader -->
 </head>
 <body>
 
