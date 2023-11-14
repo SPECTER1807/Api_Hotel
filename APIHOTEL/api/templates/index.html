@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,13 +28,13 @@
     <!-- End Google Tag Manager -->
                     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{ % static '/bootstrap/css/bootstrap.min.css'}">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="{ % static '/css/style.css'">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/media/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{ % static '/media/favicon.png" type="image/x-icon">
 
     <!-- Favicon -->
     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
