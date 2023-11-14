@@ -62,7 +62,7 @@
     <header class="header">
         <div class="header-left">
             <a href="./index.html">
-                <img class="logo" src="./assets/media/logo.png" alt="grh-logo">
+                <img class="logo" src="{% static 'media/logo.png'%}" alt="grh-logo">
             </a>
         </div>
 
@@ -152,7 +152,7 @@
         <div class="container">
             <div class="row" id="footer-row">
                 <div class="col-12 col-lg-4">
-                    <img class="footer-logo" src="./assets/media/footer-logo.png" alt="footer-logo">
+                    <img class="footer-logo" src="{% static 'media/footer-logo.png'%}" alt="footer-logo">
                     <p class="footer-text">Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State.
                         Set out in large expanse of land of over 65 hectares the resort boasts of over 90 exquisitely appointed and tastefully furnished Rooms/Suites. 
                     </p>
@@ -200,8 +200,8 @@
   </button>
     
     <!-- JS -->
-   <script src="./assets/js/index.js"></script>
+   <script src="{% static 'js/index.js'%}"></script>
 
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%}" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
