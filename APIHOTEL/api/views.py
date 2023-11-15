@@ -158,4 +158,24 @@ class Success(APIView):
 #         return HttpResponse(f'¡Reservación creada! Evento en Google Calendar: {event.get("htmlLink")}')
 
 #     return render(request, 'reservar_habitacion.html')
-    
+
+#********************+Paypal*****************************
+ 
+
+ from ProductsApp.models import Product
+ 
+ def CheckOut(request, product_id):
+     product = Product.objects.get(id=product_id)
+     
+     context = {
+         'product': product,
+     }
+     return render(request, 'checkout.html', context)
+ 
+ def PaymentSuccessful(request,product_id):
+     product = Product.objects.get(id=product_id)
+     return render(request, 'payment-success.html', {'product': product})
+ 
+ def PaymentFailed(request,product_id):
+     product = Product.objects.get(id=product_id)
+     return render(request, 'payment-failed.html', {'product': product})
