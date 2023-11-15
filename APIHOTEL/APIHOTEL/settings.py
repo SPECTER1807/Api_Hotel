@@ -9,6 +9,25 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+# # settings.py
+
+# import os
+# import json
+
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# # Ruta a las credenciales (reemplaza 'templates' con el nombre correcto de tu carpeta)
+# # CREDENTIALS_FOLDER = os.path.join(BASE_DIR, 'templates')
+
+# # Nombre del archivo de credenciales (asegúrate de tener el nombre correcto)
+# CREDENTIALS_FILENAME = 'client_secret_313015706978-kh4n54shub6i62cgc3vlj3joo8pqg35m.apps.googleusercontent.com (1).json'
+
+# # Ruta completa a las credenciales
+# GOOGLE_CREDENTIALS_FILE = os.path.join(CREDENTIALS_FOLDER, CREDENTIALS_FILENAME)
+
+# with open(GOOGLE_CREDENTIALS_FILE) as f:
+#     GOOGLE_CREDENTIALS = json.load(f)
+
 
 from pathlib import Path
 

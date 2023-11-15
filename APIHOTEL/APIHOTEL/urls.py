@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from api.views import *
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Home.as_view(),name='index'),
@@ -28,8 +30,19 @@ urlpatterns = [
     path('faqs.html',Faqs.as_view(),name='faqs'),
     path('gallery.html',Gallery.as_view(),name='gallery'),
     path('privacy-policy.html',Privacy.as_view(),name='privacy'),
-    path('rooms',Rooms.as_view(),name='rooms'),
+    path('rooms.html',Rooms.as_view(),name='rooms'),
+    path('alcove.html',Alcove.as_view(),name='alcove'),
+    path('cottage.html',Cottage.as_view(),name='cottage'),
+    path('business-suite.html',Business.as_view(),name='business'),
+    path('deluxe.html',Deluxe.as_view(),name='deluxe'),
+    path('executive.html',Executive.as_view(),name='executive'),
+    path('round-house.html',RoundHouse.as_view(),name='roundhouse'),
+    path('studio.html',Studio.as_view(),name='studio'),
+    path('vip.html',Vip.as_view(),name='vip'),
+    path('vvip.html',Vvip.as_view(),name='vvip'),
     path('success.html',Success.as_view(),name='success'),
+    
+    #  path('reservar-habitacion/', reservar_habitacion, name='reservar_habitacion'),
 
     
 ]
