@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
 from api.views import *
-from . import views
+
 
 
 
@@ -44,9 +43,9 @@ urlpatterns = [
     path('vvip.html',Vvip.as_view(),name='vvip'),
     path('success.html',Success.as_view(),name='success'),
     
-    path('checkout/<int:product_id>/', views.CheckOut, name='checkout'),
-    path('payment-successful/<int:product_id>/', views.PaymentSuccessful, name='payment-successful'),
-    path('payment-failed/<int:product_id>/', views.PaymentFailed, name='payment-failed'),
+    # path('checkout/<int:product_id>/', views.CheckOut, name='checkout'),
+    # path('payment-successful/<int:product_id>/', views.PaymentSuccessful, name='payment-successful'),
+    # path('payment-failed/<int:product_id>/', views.PaymentFailed, name='payment-failed'),
     
     #  path('reservar-habitacion/', reservar_habitacion, name='reservar_habitacion'),
 

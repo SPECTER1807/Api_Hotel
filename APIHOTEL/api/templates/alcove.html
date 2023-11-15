@@ -165,12 +165,17 @@
                     <div class="payments-acc">
                     <h4>Payments Accepted</h4>
                     <hr>
-                    <img src="{% static 'media/PAYMENT METHODS.png'%}" width="250px" alt="payment-methods">
+
                     </div>
                 </div>
 
                 <div class="price-box book-now">
-                    <h3><a href="../bookings.html" style="color: #fff;">Book Now</a></h3>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="SQLEVAHBAFSYW" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+                      </form>
                 </div>
                 <div class="reservation-box">
                     <div class="book-stay">
@@ -319,6 +324,6 @@
     <!-- JS -->
    <script src="{% static 'js/index.js'%}"></script>
 
-    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%}" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

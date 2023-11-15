@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,24 +25,26 @@
      })(window,document,'script','dataLayer','GTM-NSMS76N');</script>
      <!-- End Google Tag Manager -->
                      
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
- 
-     <!-- Main CSS -->
-     <link rel="stylesheet" href="../assets/css/style.css">
- 
-     <!-- Favicon -->
-     <link rel="shortcut icon" href="../assets/media/favicon.png" type="image/x-icon">
- 
-     <!-- Favicon -->
-     <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
- 
-     <!-- Semantic UI CDN -->
-     <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
- 
-     <!-- Jquery -->
-     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-     <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}" type="image/x-icon">
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/344589b924.js" crossorigin="anonymous"></script>
+
+    <!-- Semantic UI CDN -->
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+
  </head>
  <body>
      <!-- Google Tag Manager (noscript) -->
@@ -64,7 +67,7 @@
     <header class="header">
         <div class="header-left">
             <a href="../index.html">
-                <img class="logo" src="../assets/media/logo.png" alt="grh-logo">
+                <img class="logo" src="{% static 'media/logo.png'%}" alt="grh-logo">
             </a>
         </div>
 
@@ -125,19 +128,19 @@
 
                     <div class="grid-wrapper">
                         <div class="regular">
-                            <img src="../assets/media/Rooms/EXECUTIVE ROOM/IMG_1682.jpg" alt="grh-gallery" />
+                            <img src="{% static 'media/Rooms/EXECUTIVE ROOM/IMG_1682.jpg'%}" alt="grh-gallery" />
                         </div>
                         <div class="big">
-                            <img src="../assets/media/Rooms/EXECUTIVE ROOM/IMG_1678.jpg" alt="grh-gallery" />
+                            <img src="{% static 'media/Rooms/EXECUTIVE ROOM/IMG_1678.jpg'%}" alt="grh-gallery" />
                         </div>
                         <div class="regular">
-                            <img src="../assets/media/Rooms/EXECUTIVE ROOM/IMG_1685.jpg" alt="grh-gallery" />
+                            <img src="{% static 'media/Rooms/EXECUTIVE ROOM/IMG_1685.jpg'%}" alt="grh-gallery" />
                         </div>
                         <div class="regular">
-                            <img src="../assets/media/Rooms/EXECUTIVE ROOM/IMG_1684.jpg" alt="grh-gallery">
+                            <img src="{% static 'media/Rooms/EXECUTIVE ROOM/IMG_1684.jpg'%}" alt="grh-gallery">
                         </div>
                         <div class="regular">
-                            <img src="../assets/media/Rooms/EXECUTIVE ROOM/IMG_1683.jpg" alt="grh-gallery">
+                            <img src="{% static 'media/Rooms/EXECUTIVE ROOM/IMG_1683.jpg'%}" alt="grh-gallery">
                         </div>
                         
                     </div>
@@ -167,7 +170,12 @@
                 </div>
 
                 <div class="price-box book-now">
-                    <h3><a href="../bookings.html" style="color: #fff;">Book Now</a></h3>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="JL3ACKG5DGVTL" />
+                        <input type="hidden" name="currency_code" value="MXN" />
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                      </form>
                 </div>
                 <div class="reservation-box">
                     <div class="book-stay">
@@ -176,27 +184,27 @@
                     <div class="room-amenities">
                         <div class="left">
                             <div class="facilities">
-                                <img src="../assets/icons/couple.svg" width="27px" alt="people">
+                                <img src="{% static 'icons/couple.svg'%}" width="27px" alt="people">
                                 <p>2 Persons</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/bed.svg" width="27px" alt="Bedroom">
+                                <img src="{% static 'icons/bed.svg'%}" width="27px" alt="Bedroom">
                                 <p>1 Bedroom</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/tissue.svg" width="27px" alt="Bathroom">
+                                <img src="{% static 'icons/tissue.svg'%}" width="27px" alt="Bathroom">
                                 <p>1 Bathroom</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/fridge.svg" width="27px" alt="fridge">
+                                <img src="{% static 'icons/fridge.svg'%}" width="27px" alt="fridge">
                                 <p>Mini Fridge</p> 
                             </div>
     
                             <div class="facilities">
-                                <img src="../assets/icons/parking.svg" width="27px" alt="parking">
+                                <img src="{% static 'icons/parking.svg'%}" width="27px" alt="parking">
                                 <p>Parking</p> 
                             </div>
                             
@@ -204,27 +212,27 @@
     
                         <div class="right">
                             <div class="facilities">
-                                <img src="../assets/icons/ac.svg" width="27px" alt="AC">
+                                <img src="{% static 'icons/ac.svg'%}" width="27px" alt="AC">
                                 <p>Air Conditioning</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/room-service.svg" width="27px" alt="room-service">
+                                <img src="{% static 'icons/room-service.svg'%}" width="27px" alt="room-service">
                                 <p>Room Service</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/coffee.svg" width="27px" alt="coffee">
+                                <img src="{% static 'icons/coffee.svg'%}" width="27px" alt="coffee">
                                 <p>Tea / Coffee</p> 
                             </div>
             
                             <div class="facilities">
-                                <img src="../assets/icons/tv.svg" width="27px" alt="television">
+                                <img src="{% static 'icons/tv.svg'%}" width="27px" alt="television">
                                 <p>TV</p> 
                             </div>
     
                             <div class="facilities">
-                                <img src="../assets/icons/beach.svg" width="27px" alt="beach">
+                                <img src="{% static 'icons/beach.svg'%}" width="27px" alt="beach">
                                 <p>Beach Access (2 Per Room)</p> 
                             </div>
                            
@@ -266,7 +274,7 @@
         <div class="container">
             <div class="row" id="footer-row">
                 <div class="col-12 col-lg-4">
-                    <img class="footer-logo" src="../assets/media/footer-logo.png" alt="footer-logo">
+                    <img class="footer-logo" src="{% static 'media/footer-logo.png'%}" alt="footer-logo">
                     <p class="footer-text">Gordon Resort Hotel popularly known as McCarthy Beach is located in the University town of Abraka in Delta State.
                         Set out in large expanse of land of over 65 hectares the resort boasts of over 90 exquisitely appointed and tastefully furnished Rooms/Suites. 
                     </p>
@@ -314,8 +322,8 @@
   </button>
     
     <!-- JS -->
-   <script src="../assets/js/index.js"></script>
+   <script src="{% static 'js/index.js'%}"></script>
 
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
