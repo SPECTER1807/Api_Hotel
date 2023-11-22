@@ -1,13 +1,10 @@
 from django.db import models
 
-# # Create your models here.
-# class Product(models.Model):
-    
-#     name = models.CharField(max_length=225)
-#     description = models.TextField()
-#     price = models.IntegerField()
-#     image= models.URLField(blank=True, null=True)
-    
-#     def __str__(self):
-#         return self.name
-    
+class Usuario(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=100)  # Este campo debería ser cifrado en una aplicación real
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
